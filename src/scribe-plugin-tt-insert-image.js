@@ -5,7 +5,7 @@ define('scribe-plugin-tt-insert-image', function(){
   return function(){
     return function(scribe){
 
-        var TTInsertImageCommand = new scribe.api.Command("insertImage");
+        var TTInsertImageCommand = new scribe.api.Command("tt_insertImage");
 
         TTInsertImageCommand.nodeName = 'img';
 
