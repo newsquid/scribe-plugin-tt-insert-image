@@ -21,7 +21,7 @@ define('scribe-plugin-tt-insert-image', function(){
            var selection = new scribe.api.Selection();
            return !! selection.getContaining(function(node) {
                return node.nodeName == this.nodeName;
-           }).bind(this);
+           }.bind(this));
         };
 
         scribe.commands.tt_insertImage = TTInsertImageCommand;
