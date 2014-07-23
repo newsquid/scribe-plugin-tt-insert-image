@@ -7,17 +7,23 @@ define('scribe-plugin-tt-insert-image', function(){
 
         var TTInsertImageCommand = new scribe.api.Command("tt_insertImage");
 
-        TTInsertImageCommand.nodeName = 'img';
+        TTInsertImageCommand.nodeName = 'IMG';
 
         TTInsertImageCommand.execute = function() {
             alert("Here's a story, all about how");
             alert("my life got flipped, turned upside down");
 
-            scribe.api.SimpleCommand.prototype.execute.call(this, "test");
+            if(this.queryState()) {
+                var selection = new scribe.api.Selection();
+                console.log(selection);
+            }
         };
 
         TTInsertImageCommand.queryState = function() {
-           return true; 
+           var selection = new scribe.api.Selection();
+           return !! selection.getContaining(function(node) {
+               return node.nodeName == this.nodeName;
+           }).bind(this);
         };
 
         scribe.commands.tt_insertImage = TTInsertImageCommand;
