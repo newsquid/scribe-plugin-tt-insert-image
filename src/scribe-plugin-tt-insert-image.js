@@ -13,10 +13,10 @@ define('scribe-plugin-tt-insert-image', function(){
             alert("Here's a story, all about how");
             alert("my life got flipped, turned upside down");
 
-            if(this.queryState()) {
-                var selection = new scribe.api.Selection();
-                console.log(selection);
-            }
+            var selection = new scribe.api.Selection();
+            console.log(selection);
+
+            selection.insertAfter("<img src='http://lol.com'>");
 
             var imgLink = "http://gooel.com";
 
