@@ -1,0 +1,14 @@
+{
+  "name": "scribe-plugin-tt-insert-image",
+  "main": "scribe-plugin-tt-insert-image.js",
+  "version": "0.1.0",
+  "ignore": [
+    ".editorconfig",
+    ".git",
+    "Makefile",
+    "build",
+    "node_modules",
+    "package.json",
+    "src"
+  ]
+}

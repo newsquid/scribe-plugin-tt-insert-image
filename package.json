@@ -1,0 +1,26 @@
+{
+  "name": "scribe-plugin-tt-insert-image",
+  "version": "0.0.0",
+  "description": "Image insertion in Scribe",
+  "main": "src/scribe-plugin-tt-insert-image.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/newsquid/scribe-plugin-tt-insert-image"
+  },
+  "keywords": [
+    "scribe",
+    "plugin",
+    "image",
+    "insertion"
+  ],
+  "author": "Henceforward Media Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newsquid/scribe-plugin-tt-insert-image/issues"
+  },
+  "homepage": "https://github.com/newsquid/scribe-plugin-tt-insert-image",
+  "devDependencies": {}
+}
