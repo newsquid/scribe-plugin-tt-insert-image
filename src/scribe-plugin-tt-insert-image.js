@@ -5,14 +5,14 @@ define('scribe-plugin-tt-insert-image', function(){
   return function(){
     return function(scribe){
 
-        var TTInsertImageCommand = new scribe.api.Command("insertImage");
+        var TTInsertImageCommand = new scribe.api.Command("insertHTML");
 
         TTInsertImageCommand.nodeName = 'IMG';
 
         TTInsertImageCommand.execute = function() {
             var imgLink = "http://gooel.com";
 
-            scribe.api.SimpleCommand.prototype.execute.call(this, imgLink);
+            scribe.api.SimpleCommand.prototype.execute.call(this, "</p><img src='"+imgLink+"'><p>");
         };
 
         TTInsertImageCommand.queryState = function() {
