@@ -17,6 +17,10 @@ define('scribe-plugin-tt-insert-image', function(){
                 var selection = new scribe.api.Selection();
                 console.log(selection);
             }
+
+            var imgLink = "http://gooel.com";
+
+            scribe.api.SimpleCommand.prototype.execute.call(this, imgLink);
         };
 
         TTInsertImageCommand.queryState = function() {
