@@ -9,10 +9,12 @@ define('scribe-plugin-tt-insert-image', function(){
 
         TTInsertImageCommand.nodeName = 'IMG';
 
-        TTInsertImageCommand.execute = function() {
-            var imgLink = "http://gooel.com";
-
-            scribe.api.SimpleCommand.prototype.execute.call(this, "</p><img src='"+imgLink+"'><p>");
+        TTInsertImageCommand.execute = function(loadImageUrl) {
+            var thisInsertImageCommand = this;
+            
+            loadImageUrl(function(imageUrl) {
+                scribe.api.SimpleCommand.prototype.execute.call(this, "</p><img src='"+imgLink+"'><p>");
+            });
         };
 
         TTInsertImageCommand.queryState = function() {
