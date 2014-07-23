@@ -16,7 +16,7 @@ define('scribe-plugin-tt-insert-image', function(){
             var selection = new scribe.api.Selection();
             console.log(selection);
 
-            selection.insertAfter("<img src='http://lol.com'>");
+            selection.insertBefore("<img src='http://lol.com'>");
 
             var imgLink = "http://gooel.com";
 
