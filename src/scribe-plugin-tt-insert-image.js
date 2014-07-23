@@ -2,14 +2,14 @@ define('scribe-plugin-tt-insert-image', function(){
 
   'use strict';
 
-  return function(){
+  return function(loadImageUrl){
     return function(scribe){
 
         var TTInsertImageCommand = new scribe.api.Command("insertHTML");
 
         TTInsertImageCommand.nodeName = 'IMG';
 
-        TTInsertImageCommand.execute = function(loadImageUrl) {
+        TTInsertImageCommand.execute = function() {
             var thisInsertImageCommand = this;
             
             loadImageUrl(function(imageUrl) {
