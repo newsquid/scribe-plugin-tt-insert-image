@@ -1,6 +1,6 @@
 {
   "name": "scribe-plugin-tt-insert-image",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Image insertion in Scribe",
   "main": "src/scribe-plugin-tt-insert-image.js",
   "scripts": {
