@@ -13,7 +13,7 @@ define('scribe-plugin-tt-insert-image', function(){
             var thisInsertImageCommand = this;
             
             loadImageUrl(function(imageUrl) {
-                scribe.api.SimpleCommand.prototype.execute.call(this, "</p><img src='"+imgLink+"'><p>");
+                scribe.api.SimpleCommand.prototype.execute.call(this, "</p><img src='"+imageUrl+"'><p>");
             });
         };
 
